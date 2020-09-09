@@ -136,15 +136,16 @@ header {
 
 /********** HEADER - LOGO ************/
 #logo {
-  width: 200px;
-  height: auto;
+  width: 160px;
+  height: 64px;
+  margin-top: 10px;
   float: left;
   margin-left: 20px;
 }
 
 #logo a img {
-  width: 100%;
-  height: auto;
+  width: 160px;
+  height: 64px;
 }
 
 /*---------------------------------------
@@ -626,13 +627,14 @@ header {
   width: 150px;
   height: 100px;
   overflow: hidden;
-  margin: 5px auto;
+  margin: 0 auto 1px auto;
   text-align: center;
   background-color: white;
 }
 
 #photogallery #gallery li img {
   width: 150px;
+  height: 100px;
 }
 
 /* Preload images */
@@ -1011,18 +1013,27 @@ footer a[href^=tel] {
 ---------------------------------------------*/
 @media screen and (min-width: 861px) {
   body {
-    padding-top: 150px;
+    padding-top: 130px;
   }
 
   /*---------------------------------------------
               HEADER 
   ----------------------------------------------*/
   header {
-    height: 150px;
+    height: 135px;
+  }
+  #main_header nav {
+    margin-top: 10px;
+  }
+  #main_header nav li {
+    height: 50px;
+  }
+  #main_header nav li a {
+    line-height: 50px;
   }
 
   .nav-up {
-    top: -150px;
+    top: -135px;
   }
 
   #top-contacts-bar {
@@ -1074,13 +1085,15 @@ footer a[href^=tel] {
 
   /********** HEADER - LOGO ************/
   #logo {
-    width: 250px;
+    width: 200px;
+    height: 80px;
     position: absolute;
-    top: 0px;
+    top: 14px;
   }
 
   #logo a img {
-    margin-top: 10px;
+    width: 200px;
+    height: 80px;
   }
 
   /*---------------------------------------------
@@ -1188,21 +1201,11 @@ footer a[href^=tel] {
     width: 100%;
   }
 }
-@media screen and (min-width: 862px) and (max-width: 1000px) {
-  #logo {
-    width: 200px;
-    margin-top: 20px;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   /********** HEADER - LOGO ************/
   #logo {
-    top: 10px;
     margin-left: 100px;
-  }
-
-  #logo a img {
-    margin-top: 10px;
   }
 
   .top-contacts-bar-item {
