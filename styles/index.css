@@ -295,6 +295,8 @@ header {
 
 .section-header h2 span {
   padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   color: white;
   background-color: #81cf04;
   line-height: 44px;
@@ -325,6 +327,7 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-around;
   margin: 0 auto;
+  word-break: break-word;
 }
 
 .benefits-item {
@@ -361,6 +364,8 @@ header {
   text-align: justify;
   line-height: 26px;
 }
+
+
 
 /*---------------------------------------
         CATALOG
@@ -493,8 +498,13 @@ header {
   font-weight: 700;
   color: #555;
   text-align: center;
-  margin: 0 0 5px 0;
+  margin: 0 5px 5px 5px;
   min-height: 50px;
+}
+.product-header h3 span {
+  font-size: 11px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .product-header-description {
@@ -543,7 +553,68 @@ header {
   height: 350px;
   margin: 0 auto;
 }
-
+@media screen and (min-width: 360px) and (max-width: 620px){
+  .product {
+    height: 300px;
+    width: 175px;
+    margin: 20px auto 20px auto;
+  }
+  
+  .product .sort {
+    top: 170px;
+    font-size: 14px;
+  }
+  
+  .product::after {
+    clear: both;
+  }
+  
+  .product-header h3 {
+    font-size: 14px;
+    min-height: 30px;
+  }
+  
+  .product-header-description {
+    margin: 0 0 15px 0;
+    font-size: 12px;
+    
+  }
+  
+  .product-header-description .price {
+    font-size: 14px;
+    /*float: none;*/
+    margin: 5px auto;
+    width: 62px;
+    /*display: block;*/
+  }
+  
+  .product-header-description .units {
+    /*float: none;
+    text-align: center;
+    display: block;
+    padding: 0;*/
+    margin: 0;
+  }
+  
+  .product-header-description .size {
+    margin-left: 20px;
+    font-style: italic;
+  }
+  
+  .product-image {
+    width: 175px;
+    height: 204px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .product-image img {
+    width: 175px;
+    height: 204px;
+    margin: 0 auto;
+  }
+  
+}
 /* -------------------------------------------
           SERVICE
 ---------------------------------------------*/
