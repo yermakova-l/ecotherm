@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178109896-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-178109896-1');
+    gtag('config', 'AW-586776351');
+    </script>
+    <script>
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+              'send_to': 'AW-586776351/34NqCLLQjN8BEJ_-5ZcC',
+              'event_callback': callback
+          });
+          return false;
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Лучшие цены и качество от производителя термососны, термоясеня, лиственницы и мербау. Консультации, замеры, расчет и монтаж. Звоните!" >
     <title>Термодревесина - собственное производство в Ровно | Доставка по Украине</title>
     <link rel="stylesheet" href="../styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" crossorigin>
     <link rel="canonical" href="https://www.ecothermwood.com.ua/ru/">
     <link rel="alternate" href="https://www.ecothermwood.com.ua/" hreflang="uk-ua" />
     <link rel="icon" href="./favicon.ico">
@@ -23,14 +46,14 @@
                         <path fill="#ffffff" d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M12,11L20,6H4L12,11M4,18H20V8.37L12,13.36L4,8.37V18Z" />
                     </svg>
                 </div>
-                <div class='contact_info'><p>Напишите нам:<br><span><a href="mailto:ecothermwoodrv@gmail.com">ecothermwoodrv@gmail.com</a></span></p></div>
+                <div class='contact_info'><p>Напишите нам:<br><span><a href="mailto:info@ecothermwood.com.ua">info@ecothermwood.com.ua</a></span></p></div>
             </div>
             
             <div class='top-contacts-bar-item top-phone'>
                 <div class="icon-block"><svg style="width:20px;height:20px" viewBox="0 0 24 24"><path fill="#ffffff" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
                     </svg>
                 </div>
-                <div class='contact_info'><p>Позвоните нам:<br><span><a href="tel:+380970033476">+38 097 00 33 476</a></span></p></div>
+                <div class='contact_info'><p>Позвоните нам:<br><span><a href="tel:+380970033476" onclick="return gtag_report_conversion('tel:+380970033476');">+38 097 00 33 476</a></span></p></div>
             </div>
             
             
@@ -251,37 +274,13 @@
                         <div class="product-image">
                             <img src="../images/catalog/5492.jpg" alt="Фальш-брус" />
                         </div>
-                        <div class='sort'>Термоясень</div>
+                        <div class='sort'>Термоясень экстра</div>
                         <div class="product-header">
-                        <h3>Фальш-брус (сорт екстра)</h3>
-                        <div class="product-header-description">
-                            <p><span class="units">Толщина 20 мм<br>Цена за м/кв</span><span class="price"> 1350 грн</span></p>
-                            </div>
-                    </div>
-                    </div>
-                    <div class="product pine">
-                        <div class="product-image">
-                            <img src="../images/catalog/5489.jpg" alt="Скошенный планкен" />
-                        </div>
-                        <div class='sort'>Термососна</div>
-                        <div class="product-header">
-                        <h3>Скошенный планкен</h3>
-                        <div class="product-header-description">
-                            <p><span class="units">Толщина 25 мм<br>Цена за м/кв</span><span class="price"> 650 грн</span></p>
-                            </div>
-                    </div>
-                    </div>
-                    <div class="product ash">
-                        <div class="product-image">
-                            <img src="../images/catalog/5489.jpg" alt="Скошенный планкен" />
-                        </div>
-                        <div class='sort'>Термоясень</div>
-                        <div class="product-header">
-                        <h3>Скошенный планкен</h3>
-                        <div class="product-header-description">
+                            <h3>Фальш-брус</h3>
+                            <div class="product-header-description">
                                 <p><span class="units">Толщина 20 мм<br>Цена за м/кв</span><span class="price"> 1350 грн</span></p>
-                            </div>    
-                    </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="product pine">
                         <div class="product-image">
@@ -289,15 +288,39 @@
                         </div>
                         <div class='sort'>Термососна</div>
                         <div class="product-header">
-                        <h3>Фальш-брус</h3>
-                        <div class="product-header-description">
-                                <p><span class="units">Толщина 25 мм<br>Цена за м/кв</span><span class="price"> 650 грн</span></p>
+                            <h3>Фальш-брус</h3>
+                            <div class="product-header-description">
+                                    <p><span class="units">Толщина 25 мм<br>Цена за м/кв</span><span class="price"> 650 грн</span></p>
                             </div>
-                    </div>
+                        </div>
                     </div>
                     <div class="product pine">
                         <div class="product-image">
-                            <img src="../images/catalog/5491.jpg" alt="Доска для пола" />
+                            <img src="../images/catalog/5489.jpg" alt="Скошенный планкен" />
+                        </div>
+                        <div class='sort'>Термососна</div>
+                        <div class="product-header">
+                            <h3>Скошенный планкен</h3>
+                            <div class="product-header-description">
+                                <p><span class="units">Толщина 25 мм<br>Цена за м/кв</span><span class="price"> 650 грн</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product ash">
+                        <div class="product-image">
+                            <img src="../images/catalog/5489.jpg" alt="Скошенный планкен" />
+                        </div>
+                        <div class='sort'>Термоясень экстра</div>
+                        <div class="product-header">
+                            <h3>Скошенный планкен</h3>
+                            <div class="product-header-description">
+                                    <p><span class="units">Толщина 20 мм<br>Цена за м/кв</span><span class="price"> 1350 грн</span></p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="product pine">
+                        <div class="product-image">
+                            <img src="../images/catalog/5492.jpg" alt="Доска для пола" />
                         </div>
                         <div class='sort'>Термососна</div>
                         <div class="product-header">
@@ -309,7 +332,7 @@
                     </div>
                     <div class="product pine">
                         <div class="product-image">
-                            <img src="../images/catalog/5495.jpg" alt="Доска для пола" />
+                            <img src="../images/catalog/5492.jpg" alt="Доска для пола" />
                         </div>
                         <div class='sort'>Термососна</div>
                         <div class="product-header">
@@ -321,9 +344,9 @@
                     </div>
                     <div class="product ash">
                         <div class="product-image">
-                            <img src="../images/catalog/5497.jpg" alt="Доска для пола" />
+                            <img src="../images/catalog/5492.jpg" alt="Доска для пола" />
                         </div>
-                        <div class='sort'>Термоясень екстра</div>
+                        <div class='sort'>Термоясень экстра</div>
                         <div class="product-header">
                         <h3>Доска для пола</h3>
                         <div class="product-header-description">
@@ -339,7 +362,7 @@
                         <div class="product-header">
                         <h3>Террасная доска<br><span class="product-header-small">вельвет/гладкая с клипсой</span></h3>
                         <div class="product-header-description">
-                                <p><span class="units">Толщина 20 мм<br>Цена за м/кв</span><span class="price"> 650 грн</span></p>
+                                <p><span class="units">Толщина 25 мм<br>Цена за м/кв</span><span class="price"> 650 грн</span></p>
                             </div>
                     </div>
                     </div>
@@ -347,7 +370,7 @@
                         <div class="product-image">
                             <img src="../images/catalog/5499.jpg" alt="Террасная доска" />
                         </div>
-                        <div class='sort'>Термоясень екстра</div>
+                        <div class='sort'>Термоясень экстра</div>
                         <div class="product-header">
                         <h3>Террасная доска<br><span class="product-header-small">вельвет/гладкая с клипсой</span></h3>
                         <div class="product-header-description">
@@ -371,7 +394,7 @@
                         <div class="product-image">
                             <img src="../images/catalog/5500.jpg" alt="Паркетная доска" />
                         </div>
-                        <div class='sort'>Термоясень екстра</div>
+                        <div class='sort'>Термоясень экстра</div>
                         <div class="product-header">
                         <h3>Паркетная доска</h3>
                         <div class="product-header-description">
@@ -419,7 +442,7 @@
                         <div class="product-image">
                             <img src="../images/catalog/5505.jpg" alt="Палубная доска" />
                         </div>
-                        <div class='sort'>Термоясень екстра</div>
+                        <div class='sort'>Термоясень экстра</div>
                         <div class="product-header">
                         <h3>Палубная доска</h3>
                         <div class="product-header-description">
@@ -521,7 +544,7 @@
                     цикл работ самостоятельно, начиная от замеров и заканчивая монтажом, с учетом всех пожеланий 
                     нашего заказчика. </p>
                  <p class="service-call-to-action">Звоните! Консультация по номеру:</p>
-                 <p class="service-phone"><a href='tel:+380970033476' title='Link to phone call'>+38 097 00 33 476</a></p>
+                 <p class="service-phone"><a href='tel:+380970033476' onclick="return gtag_report_conversion('tel:+380970033476');" title='Link to phone call'>+38 097 00 33 476</a></p>
             </div> 
         </div>
         <div class="section-header">
@@ -598,7 +621,8 @@
                     </div>
                     <h3>Директор</h3>
                     <p class='contact-name'>Ползунов Дмитрий</p>
-                    <p class='contact-name'><a href='tel:+380970033476' title='Link to phone call'>+38 097 00 33 476</a></p>
+                    <p class='contact-name'><a href='tel:+380970033476' onclick="return gtag_report_conversion('tel:+380970033476');" title='Link to phone call'>+38 097 00 33 476</a></p>
+                    <p class='contact-name'><a href="mailto:info@ecothermwood.com.ua">info@ecothermwood.com.ua</a></p>
                     <p class='contact-name'><a href="mailto:ecothermwoodrv@gmail.com">ecothermwoodrv@gmail.com</a></p>
                 </div>
                 <div class="contacts-item">    
