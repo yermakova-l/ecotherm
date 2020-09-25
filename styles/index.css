@@ -35,6 +35,17 @@ body {
 .clear {
   clear: both;
 }
+.more a {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 40px;
+  background-color: #efefef;
+  color: #fb6b40;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+}
 
 /*---------------------------------------
       HEADER
@@ -232,7 +243,7 @@ header {
   background-color: rgba(255, 255, 255, 0.5);
   font-family: "Poppins", sans-serif;
   padding: 20px 30px;
-  width: 320px;
+  width: 340px;
   height: 310px;
   margin: 90px auto 0 auto;
   display: flex;
@@ -244,10 +255,9 @@ header {
 
 .slide .content h1 {
   color: white;
-  font-size: 33px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 36px;
   text-align: center;
-  padding-right: 30px;
   font-weight: 900;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4), 1px 1px 1px rgba(0, 0, 0, 0.4), 0 0 10px #000;
   animation-name: slidertext;
@@ -553,68 +563,8 @@ header {
   height: 350px;
   margin: 0 auto;
 }
-@media screen and (min-width: 360px) and (max-width: 620px){
-  .product {
-    height: 300px;
-    width: 175px;
-    margin: 20px auto 20px auto;
-  }
-  
-  .product .sort {
-    top: 170px;
-    font-size: 14px;
-  }
-  
-  .product::after {
-    clear: both;
-  }
-  
-  .product-header h3 {
-    font-size: 14px;
-    min-height: 30px;
-  }
-  
-  .product-header-description {
-    margin: 0 0 15px 0;
-    font-size: 12px;
-    
-  }
-  
-  .product-header-description .price {
-    font-size: 14px;
-    /*float: none;*/
-    margin: 5px auto;
-    width: 62px;
-    /*display: block;*/
-  }
-  
-  .product-header-description .units {
-    /*float: none;
-    text-align: center;
-    display: block;
-    padding: 0;*/
-    margin: 0;
-  }
-  
-  .product-header-description .size {
-    margin-left: 20px;
-    font-style: italic;
-  }
-  
-  .product-image {
-    width: 175px;
-    height: 204px;
-    overflow: hidden;
-    margin-bottom: 10px;
-  }
-  
-  .product-image img {
-    width: 175px;
-    height: 204px;
-    margin: 0 auto;
-  }
-  
-}
+
+
 /* -------------------------------------------
           SERVICE
 ---------------------------------------------*/
@@ -1082,6 +1032,208 @@ footer a[href^=tel] {
             Media-queries
 ----------------------------------------------
 ---------------------------------------------*/
+@media screen and (min-width: 300px) and (max-width: 359px){
+  #main_header nav li {
+    height: 45px;
+  }
+  #slider {
+    height: 320px;
+  }
+  .slide .content {
+    width: 250px;
+    height: 200px;
+    margin-top: 50px;
+  }
+  .slide .content h1 {
+    font-size: 24px;
+    line-height: 30px;
+    padding-right: 0;
+  }
+
+  .section-header { 
+    margin-bottom: 0;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .section-header h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .section-header h2 span {
+    line-height: 30px;
+  }
+  .section-header h3 {
+    font-size: 14px;
+  }
+
+  #catalog-filter li {
+    width: 90px;
+  }
+
+  .product {
+    width: 150px;
+    height: 300px;
+  }
+  .product-image {
+    width: 150px;
+    height: 170px;
+    overflow: hidden;
+  }
+  .product-image img {
+    width: 150px;
+    height: auto;
+  }
+  .product-header h3 {
+    font-size: 12px;
+    min-height: 0;
+  }
+  .product .sort {
+    top: 140px;
+    font-size: 12px;
+  }
+  .product-header-description p {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    
+  }
+  .product-header-description .price {
+    float: none;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+  }
+  .product-header-description .units {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .more a {
+    font-size: 14px;
+  }
+  #benefits {
+    margin-top: -30px;
+  }
+  .benefits-icon {
+    height: 40px;
+  }
+  .benefits-header {
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+  .benefits-icon i svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  #benefits .benefits-description {
+    font-size: 13px;
+    max-width: 280px;
+    line-height: 20px;
+    margin: 20px auto 0 auto;
+  }
+  #service {
+    height: 350px;
+    background: none;
+  }
+
+  #service  .service-content-title {
+    font-size: 18px;
+  }
+  #service  .service-content-description {
+    font-size: 16px;
+  }
+  #service  .service-call-to-action {
+    font-size: 18px;
+  }
+  #service .service-phone a  {
+    font-size: 20px;
+  }
+  .production-description p {
+    font-size: 14px;
+  }
+  footer .footer-title h2 {
+    font-size: 20px;
+  }
+  .contacts-item p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  
+}
+
+@media screen and (min-width: 360px) and (max-width: 620px){
+  
+  
+  .product {
+    height: 300px;
+    width: 175px;
+    margin: 20px auto 20px auto;
+  }
+  
+  .product .sort {
+    top: 170px;
+    font-size: 14px;
+  }
+  
+  .product::after {
+    clear: both;
+  }
+  
+  .product-header h3 {
+    font-size: 14px;
+    min-height: 30px;
+  }
+  
+  .product-header-description {
+    margin: 0 0 15px 0;
+    font-size: 12px;
+    
+  }
+  
+  .product-header-description .price {
+    font-size: 14px;
+    /*float: none;*/
+    margin: 5px auto;
+    width: 62px;
+    /*display: block;*/
+  }
+  
+  .product-header-description .units {
+    /*float: none;
+    text-align: center;
+    display: block;
+    padding: 0;*/
+    margin: 0;
+  }
+  
+  .product-header-description .size {
+    margin-left: 20px;
+    font-style: italic;
+  }
+  
+  .product-image {
+    width: 175px;
+    height: 204px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .product-image img {
+    width: 175px;
+    height: 204px;
+    margin: 0 auto;
+  }
+  
+}
+
+
 @media screen and (min-width: 861px) {
   body {
     padding-top: 130px;
